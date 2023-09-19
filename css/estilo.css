@@ -1,5 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400;1,600;1,800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+/* INICIO DEL HEADER */
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+header a img{
+    width: 150px;
+}
+header nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    transition: .5s;
+}
+header nav a:hover{
+    color: #fc697b;
+}
+/* FIN DEL HEADER */
+
+/* INICIO DEL HERO */
+main .hero{
+    background-image: url("../img/hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    padding-top: 15%;
+}
+main .hero .inicio{
+    width: 50%;
+    height: 400px;
+    margin-left: 20%;
+}
+main .hero .inicio h1{
+    color: white;
+    font-size: 90px;
+    padding: 5px 0;
+}
+main .hero .inicio p{
+    color: white;
+    font-size: 25px;
+    padding: 15px 0;
+}
+main .hero .inicio a{
+    display: inline-block;
+    padding: 13px 10px;
+    margin-top: 20px ;
+    color: #f53a50;
+    border: 1px solid #f53a50;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+
+}
+main .hero .inicio a:hover{
+    background-color: #f53a50;
+    color: white;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+/* FIN DEL HERO */
+
+
+/* INICIO DE PRODUCTS */
+main .products{
+    height: 100vh;
+}
+main .products h2{
+    color: #f53a50;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+main .products .contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+main .products .contenido .producto1{
+    width: 310px;
+    height: 500px;
+    padding: 0 10px;
+    margin: 0 15px;
+}
+main .products .contenido .producto1 img{
+    border: 1px none ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(189, 70, 70, 0.6);
+}
+main .products .contenido .producto1 div h3{
+    color: #f53a50;
+    padding: 25px 0;
+    font-size: 25px;
+}
+main .products .contenido .producto1 div p{
+    font-size: 17px;
+}
+main .products .contenido .producto1 a{
+    width: 200px;
+    background-color: #fc697b;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 15px 25px;
+    color: white;
+    border: 1px solid #fc697b;
+    transition: .5s;
+    font-size: 17px;
+}
+main .products .contenido .producto1 a:hover{
+    background-color: #f53a50;
+    box-shadow: 0 0 20px rgba(189, 70, 70, 0.6);
+}
+/* FIN DE PRODUCTS */
+
+
+/* INICIO DE EBOOKS */
+main .ebooks{
+    height: 45vh;
+    background: linear-gradient(45deg, rgba(194,29,95,1) 30%, rgba(245,58,80,1) 83%, rgba(252,105,123,1) 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .ebooks .contenido2 div h2{
+    color: white;
+    font-size: 50px;
+    padding: 20px 0;
+}
+main .ebooks .contenido2 div p{
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+}
+main .ebooks .contenido2 div a{
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: #f53a50;
+    background-color: white;
+    border: 1px solid #fc697b;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 100px;
+    transition: .5s;
+}
+main .ebooks .contenido2 div a:hover {
+    background-color: #f53a50;
+    color: white;
+    box-shadow: 0 0 20px rgba(29, 23, 23, 0.6);
+}
+/* SEGUNDA PARTE DE EBOOKS */
+main .ebooks2{
+    background-image: url("../img/petsprueba2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+main .ebooks2 .contenido3{
+    width: 500px;
+    height: 300px;
+    margin-right: 15%;
+    margin-bottom: 30px;
+}
+main .ebooks2 .contenido3 div h2{
+    font-size: 70px;
+    color: white
+}
+/* FIN DE EBOOKS */
+
+
+/* INICIO DE ABOUT */
+main .about{
+    height: 90vh;
+}
+main .about .contenido4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main .about .contenido4 .texto3{
+    width: 450px;
+    position: relative;
+    right: 15%;
+    padding-left: 50px;
+}
+main .about .contenido4 .texto3 h2{
+    font-size: 70px;
+    color: #f53a50;
+    padding-bottom: 50px;
+}
+main .about .contenido4 .texto3 p{
+    font-size: 15px;
+    padding-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+main .about .contenido4 .texto4{
+    height: 400px;
+}
+main .about .contenido4 .texto4 .caja1{
+    display: flex;
+    align-items: center;
+    padding: 20px 3px;
+}
+main .about .contenido4 .texto4 .caja1 div img{
+    box-shadow: 0 0 20px rgba(29, 23, 23, 0.6);
+    margin: 0 20px;
+    position: relative;
+    z-index: 2;
+    left: 35px;
+}
+main .about .contenido4 .texto4 .caja1 .texto8{
+    box-shadow: 0 0 20px rgba(29, 23, 23, 0.6);
+    background-color: white;
+    padding: 5px 0;
+    width: 300px;
+    height: 105px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    z-index: -1;
+}
+main .about .contenido4 .texto4 .caja1 div h3{
+    color: #f53a50;
+    padding: 10px 0;
+}
+main .about .contenido4 .texto4 .color{
+    height: 94vh;
+    width: 300px;
+    background: linear-gradient(138deg, rgba(252,105,123,1) 54%, rgba(194,29,95,1) 100%);
+    position: relative;
+    top: -163%;
+    left: 80%;
+    z-index: -4;
+    border-radius: 0 0 250px 0;
+}
+/* FIN DE ABOUT */
+
+
+/* INICIO DE REVIEWS */
+main .reviews{
+    height: 72vh;
+    background-color: #fff5f6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main .reviews h2{
+    text-align: center;
+    color: #f53a50;
+    font-size: 60px;
+}
+main .reviews .contenido5{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+main .reviews .contenido5 .texto5{
+    width: 400px;
+    text-align: center;
+}
+main .reviews .contenido5 .texto5 h3{
+    color: #f53a50;
+    font-size: 30px
+}
+main .reviews .contenido5 .texto5 p{
+    color: rgb(107, 105, 105);
+    padding-top: 30px;
+    font-size: 17px;
+}
+/* INICIO DE SEGUNDA PARTE DE REVIEWS */
+main .reviews2{
+    height: 70vh;
+    display: flex; 
+}
+main .reviews2 .caja4{
+    width: 50%;
+}
+main .reviews2 .caja4 img{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+main .reviews2 .caja5{
+    width: 50%;
+}
+main .reviews2 .caja5 .texto6 h2{
+    padding: 100px 0 20px 0;
+    font-size: 50px;
+    color: #f53a50;
+}
+main .reviews2 .caja5 .texto6 p{
+    color: gray;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+main .reviews2 .caja5 .texto7 p{
+    color: gray;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+main .reviews2 .caja5 .texto7 p span{
+    color: #f53a50;
+}
+/* FIN DE REVIEWS */
+
+
+/* INICIO DE WARRANTY */
+main .warranty{
+    height: 40vh;
+    background: linear-gradient(45deg, rgba(194,29,95,1) 30%, rgba(245,58,80,1) 83%, rgba(252,105,123,1) 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main .warranty .contenido6 div{
+    height: 200px;
+    width: 400px;
+}
+main .warranty .contenido6 div h2{
+    color: white;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+main .warranty .contenido6 div p{
+    color: rgb(241, 226, 226);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+main .warranty .contenido6 div a{
+    display: inline-block;
+    text-decoration: none;
+    color: #f53a50;
+    background-color: white;
+    border: 1px solid #fc697b;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    padding: 15px 0;
+    margin-top: 30px;
+    transition: .5s;
+}
+main .warranty .contenido6 div a:hover{
+    box-shadow: 0 0 20px rgba(29, 23, 23, 0.6);
+    border: 1px solid white;
+    background-color: #f53a50;
+    color: white;
+}
+/* FIN DE WARRANTY */
+
+
+/* INICIO DE CONTACTO */
+main .contact{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .contact h2{
+    color: #f53a50;
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 40px; 
+    font-family: 'Poppins', sans-serif;
+}
+main .contact .contenido7{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+main .contact .contenido7 form{
+    width: 30%;
+}
+main .contact .contenido7 form .caja6{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+main .contact .contenido7 form .caja6 div{
+    display: flex;
+    flex-direction: column;
+}
+main .contact .contenido7 form .caja6 div label{
+    color: gray;
+    padding: 5px 0;
+}
+main .contact .contenido7 form .caja6 div input{
+    width: 250px;
+    height: 40px;
+    border: 1px none;
+    border-radius: 10px;
+    padding: 0 5px;
+    box-shadow: 0 0 15px rgba(245, 231, 237, 0.925);
+    transition: .5s;
+}
+main .contact .contenido7 form .caja6 div input:hover{
+    background-color: rgba(247, 239, 226, 0.925);
+}
+main .contact .contenido7 form .caja7{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+main .contact .contenido7 form .caja7 label{
+    color: gray;
+    padding: 5px 0;
+}
+main .contact .contenido7 form .caja7 input{
+    height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 0 5px;
+    box-shadow: 0 0 15px rgba(245, 231, 237, 0.925);
+    transition: .5s;
+}
+main .contact .contenido7 form .caja7 input:hover{
+    background-color: rgba(247, 239, 226, 0.925);
+}
+main .contact .contenido7 form .caja8{
+    display: flex;
+    flex-direction: column;
+}
+main .contact .contenido7 form .caja8 label{
+    color: gray;
+    padding: 10px 0;
+}
+main .contact .contenido7 form .caja8 textarea{
+    height: 250px;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(245, 231, 237, 0.925);
+    resize: none;
+    transition: .5s;
+}
+main .contact .contenido7 form .boton1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+main .contact .contenido7 form .boton1 button{
+    width: 40%;
+    padding: 10px 5px;
+    border: 1px solid #f53a50;
+    background-color: #f53a50;
+    color: white;
+    box-shadow: 0 0 20px rgba(29, 23, 23, 0.6);
+    transition: .5s;
+}
+main .contact .contenido7 form .boton1 button:hover{
+    background-color: #fc697b;
+}
+/* FIN DE CONTACT */
+
+
+/*  INICIO DEL FOOTER*/
+footer{
+    background: linear-gradient(45deg, rgba(194,29,95,1) 30%, rgba(245,58,80,1) 83%, rgba(252,105,123,1) 93%);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer div a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+}
+/* FIN DE FOOTER */
